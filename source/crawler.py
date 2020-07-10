@@ -44,10 +44,6 @@ def bfs(url):
                 for link in links:
                     if link not in queue and link not in urls_bfs:
                         queue.append((link, depth + 1))
-def print_bfs_urls():
-    with open('unique-urls-bfs.txt', 'w') as f:
-        for item in urls_bfs:
-            f.write("%s\n" %  item)
 
 def bfs_crawl(url):
     bfs(url)
