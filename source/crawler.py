@@ -44,8 +44,4 @@ def bfs(url):
                     if link not in queue and link not in urls_bfs:
                         queue.append((link, depth + 1))
 
-def bfs_crawl(url):
-    bfs(url)
-    print_bfs_urls()
-
 bfs('https://en.wikipedia.org/wiki/Main_Page')
