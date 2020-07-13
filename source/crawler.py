@@ -70,7 +70,7 @@ def crawl_for_lvl(url, given_lvl):
         
 print("Enter the Depth of search:")
 depth = input()
-print("Enter the Start page or leave it empty to use welcome page")
+print("Enter the Start page or leave it empty to use welcome page:")
 start_page = input()
 if not start_page:
 	start_page = "https://kk.wikipedia.org/wiki/Басты_бет"
