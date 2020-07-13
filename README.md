@@ -22,8 +22,11 @@ Crawling all the sites to the three-depth length and print the biggest site on t
 
 # <a name="dependencies"></a> Dependencies
 **Debian/Ubuntu/Mint**
+
 ``` sudo apt-get install python3```
+
 **Fedora/CentOS**
+
 ```sudo dnf install python3```
 
 # <a name="run"></a> How to run programs
