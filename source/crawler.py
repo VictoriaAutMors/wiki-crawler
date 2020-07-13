@@ -1,11 +1,7 @@
 from collections import deque
-import sys
-from urllib.parse import urljoin, unquote
+from urllib.parse import unquote
 import requests
 from urllib.request import urlopen
-import re
-import multiprocessing as mp
-import requests
 import re
 import urllib.request, urllib.error, urllib.parse
 
@@ -79,7 +75,7 @@ depth = input()
 print("Enter the Start page or leave it empty to use welcome page")
 start_page = input()
 if not start_page:
-	start_page = baseURL
+	start_page = "https://kk.wikipedia.org/wiki/Басты_бет"
 crawl_for_lvl(start_page, depth)
 exit()
 
