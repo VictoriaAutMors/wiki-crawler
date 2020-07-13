@@ -16,11 +16,9 @@ def get_urls(url):
         yield baseURL + url
 
 def print_report_for_lvl(crawled, max_url):
-    print("DEPTH IS REACHED!")
-    print("Crowled sites:", crawled)
-    print("Site with biggest quantity of symbols:")
+    print("DEPTH IS REACHED!\nCrawled sites:", crawled)
     answer = requests.get(max_url)
-    print(unquote(max_url) + str(" : ") + str(len(answer.text)))
+    print("Site with biggest quantity of symbols:", unquote(max_url) + str(" : ") + str(len(answer.text)))
 
 def visit_for_url(url, marked, queue, crawled, lvl, max_url):
     for url in get_urls(url):
